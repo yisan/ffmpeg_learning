@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input Bitstream" />
+
+    <EditText
+        android:id="@+id/edt_input"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/tv1"
+        android:layout_marginTop="10dp"
+        android:hint="原视频文件名"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        app:layout_constraintTop_toBottomOf="@+id/edt_input"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="Output Raw YUV" />
+
+    <EditText
+        android:id="@+id/edt_output"
+        app:layout_constraintTop_toBottomOf="@id/tv2"
+        android:layout_width="match_parent"
+        android:hint="解码后的存储文件名"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"/>
+    <Button
+        android:id="@+id/start"
+        app:layout_constraintTop_toBottomOf="@+id/edt_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start"/>
+
+</android.support.constraint.ConstraintLayout>
